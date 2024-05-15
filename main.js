@@ -25,6 +25,13 @@ createApp({
                 
             }
 
+<<<<<<< HEAD
+=======
+                console.log("Ricevuta risposta", datiRisposta);
+                return datiRisposta
+
+            });
+>>>>>>> d29f8c3516333d23236b6ec54ff9cb33d50c2803
         }
     },
     mounted() {
