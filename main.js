@@ -19,12 +19,11 @@ createApp({
     
                     console.log("Ricevuta risposta", datiRisposta);
                 
-                    this.mailRicevute.push(this.datiRisposta);
-                    return datiRisposta;
+                    this.mailRicevute.push(datiRisposta.response);
                 });
                 
             }
-
+            return this.mailRicevute;
         }
     },
     mounted() {
