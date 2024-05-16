@@ -12,8 +12,15 @@
 
 <body>
     <div id="app">
-        <h2 v-for="mail, i in mailRicevute">{{ mail }}</h2> 
-        <!-- Sbagliavo array quindi mi prendeva l'altro -->
+        <!-- Bonus 2 -->
+        <button @click="getMail()">
+            Test
+        </button>
+        <!-- Questo in basso funziona solo quando abbiamo numeroMail -->
+         <ol v-if="mailRicevute.length % this.numeroMail == 0"> <!-- Grazie all'if ho il controllo e stampo tutto in una botta -->
+            <li v-for="mail, i in mailRicevute">{{ mail }}</li> 
+            <!-- Sbagliavo array quindi mi prendeva l'altro -->
+        </ol>
     </div>
 
 
